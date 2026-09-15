@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="geo" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="https" />
+        </intent>
+    </queries>
+
+    <application
+        android:name=".TourismApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_app_logo"
+        android:label="ITANES World Travel"
+        android:roundIcon="@drawable/ic_app_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ITANESTurismo">
+
+        <activity android:name=".ui.map.MapActivity" android:exported="false" />
+        <activity android:name=".ui.about.AboutActivity" android:exported="false" />
+        <activity android:name=".ui.favorites.FavoritesActivity" android:exported="false" />
+        <activity android:name=".ui.detail.DetailActivity" android:exported="false" />
+        <activity android:name=".ui.main.MainActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

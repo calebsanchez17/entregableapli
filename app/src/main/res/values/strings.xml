@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ITANES World Travel</string>
+    <string name="favorites">Favoritos</string>
+    <string name="about">Acerca de</string>
+    <string name="offline">Modo offline · última ruta disponible</string>
+    <string name="online">Conectado · búsqueda mundial activa</string>
+    <string name="share">Compartir</string>
+    <string name="save_favorite">Guardar favorito</string>
+    <string name="remove_favorite">Quitar favorito</string>
+    <string name="weather">Clima actual</string>
+    <string name="empty_favorites">Todavía no tienes favoritos. Abre un lugar y toca “Guardar favorito”.</string>
+</resources>

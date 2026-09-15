@@ -1,0 +1,11 @@
+{
+  "destination": "Paris, France",
+  "source": "mock-json-for-academic-testing",
+  "places": [
+    {"name":"Tourist place 1","lat":48.8584,"lng":2.2945},
+    {"name":"Tourist place 2","lat":48.8606,"lng":2.3376},
+    {"name":"Tourist place 3","lat":48.8530,"lng":2.3499},
+    {"name":"Tourist place 4","lat":48.8867,"lng":2.3431},
+    {"name":"Tourist place 5","lat":48.8738,"lng":2.2950}
+  ]
+}

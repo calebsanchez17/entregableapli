@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/surface">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/navy_900"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:title="Acerca del proyecto"
+        app:titleTextColor="@color/white" />
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/screen_padding">
+
+            <ImageView
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_app_logo"
+                android:contentDescription="Logo ITANES" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="ITANES World Travel"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Proyecto final · Desarrollo de Aplicaciones Móviles"
+                android:gravity="center"
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="1dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:text="La versión mundial permite escribir cualquier destino y generar una ruta turística con lugares cercanos. La búsqueda usa datos de OpenStreetMap; el mapa interactivo se muestra dentro de la app; el clima se consulta con Open-Meteo y la ruta real en automóvil puede abrirse en Google Maps. La última ruta y los favoritos quedan guardados para uso offline."
+                    android:textColor="@color/text_primary"
+                    android:textSize="15sp"
+                    android:lineSpacingExtra="3dp" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:text="Tecnologías principales"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="• Kotlin + XML (Empty Views Activity)\n• Arquitectura MVVM\n• SQLiteOpenHelper + SharedPreferences\n• Retrofit + Gson + OkHttp\n• Nominatim + Overpass / OpenStreetMap\n• osmdroid para mapa interactivo\n• Open-Meteo para clima\n• WorkManager para sincronización\n• RecyclerView + Material Design 3\n• Glide para imágenes\n• Google Maps para navegación en automóvil"
+                android:textColor="@color/text_secondary"
+                android:textSize="15sp"
+                android:lineSpacingExtra="4dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

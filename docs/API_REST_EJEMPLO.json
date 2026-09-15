@@ -1,0 +1,9 @@
+{
+  "flujo_mundial": {
+    "1_geocodificacion": "GET Nominatim /search?q=Paris, France&format=jsonv2&limit=1&addressdetails=1",
+    "2_puntos_turisticos": "GET Overpass /api/interpreter?data=[out:json]... tourism/historic around coordinates ...",
+    "3_clima": "GET Open-Meteo /v1/forecast?latitude=48.8566&longitude=2.3522&current=temperature_2m,weather_code&timezone=auto"
+  },
+  "procesamiento": "Retrofit y Gson convierten el JSON a modelos Kotlin. El repositorio selecciona hasta 5 lugares cercanos, los guarda en SQLite y conserva la última ruta para uso offline.",
+  "mapa": "osmdroid dibuja OpenStreetMap dentro de la app y Google Maps se abre mediante Intent HTTPS para navegación real en automóvil."
+}
